@@ -168,6 +168,8 @@ The following packages have unmet dependencies:
  cuda : Depends: cuda-11-6 (>= 11.6.2) but it is not going to be installed
 E: Unable to correct problems, you have held broken packages.
 
+extra_compile_args={"nvcc": ["-I" + os.path.join(os.path.dirname(os.path.abspath(__file__)), "third_party/glm/"),"--std=c++17"]})
+
 Please avoid running ``setup.py`` directly.
               Instead, use pypa/build, pypa/installer or other
               standards-based tools.
