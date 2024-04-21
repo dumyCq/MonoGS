@@ -158,6 +158,17 @@ MonoGS is released under a **LICENSE.md**. For a list of code dependencies which
 # Citation
 If you found this code/work to be useful in your own research, please considering citing the following:
 
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ cuda : Depends: cuda-11-6 (>= 11.6.2) but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+
+
 ```bibtex
 @inproceedings{Matsuki:Murai:etal:CVPR2024,
   title={{G}aussian {S}platting {SLAM}},
