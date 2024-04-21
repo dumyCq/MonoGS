@@ -168,6 +168,15 @@ The following packages have unmet dependencies:
  cuda : Depends: cuda-11-6 (>= 11.6.2) but it is not going to be installed
 E: Unable to correct problems, you have held broken packages.
 
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ cuda : Depends: cuda-11-6 (>= 11.6.2) but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
 
 ```bibtex
 @inproceedings{Matsuki:Murai:etal:CVPR2024,
