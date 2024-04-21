@@ -157,24 +157,11 @@ MonoGS is released under a **LICENSE.md**. For a list of code dependencies which
 
 # Citation
 If you found this code/work to be useful in your own research, please considering citing the following:
-
-Some packages could not be installed. This may mean that you have
-requested an impossible situation or if you are using the unstable
-distribution that some required packages have not yet been created
-or been moved out of Incoming.
-The following information may help to resolve the situation:
-
-The following packages have unmet dependencies:
- cuda : Depends: cuda-11-6 (>= 11.6.2) but it is not going to be installed
-E: Unable to correct problems, you have held broken packages.
-
-extra_compile_args={"nvcc": ["-I" + os.path.join(os.path.dirname(os.path.abspath(__file__)), "third_party/glm/"),"--std=c++17"]})
-
-Please avoid running ``setup.py`` directly.
-              Instead, use pypa/build, pypa/installer or other
-              standards-based tools.
-      
-              See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt install code
 
 ```bibtex
 @inproceedings{Matsuki:Murai:etal:CVPR2024,
