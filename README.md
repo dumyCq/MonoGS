@@ -157,11 +157,9 @@ MonoGS is released under a **LICENSE.md**. For a list of code dependencies which
 
 # Citation
 If you found this code/work to be useful in your own research, please considering citing the following:
-sudo apt update
-sudo apt install software-properties-common apt-transport-https wget
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt install code
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
 
 ```bibtex
 @inproceedings{Matsuki:Murai:etal:CVPR2024,
