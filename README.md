@@ -161,6 +161,15 @@ export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
 export CC=/usr/bin/gcc-10, export CXX=/usr/bin/g++-10
+
+
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda-repo-ubuntu2004-11-6-local_11.6.0-510.39.01-1_amd64.deb
+sudo dpkg -i cuda-repo-ubuntu2004-11-6-local_11.6.0-510.39.01-1_amd64.deb
+sudo apt-key add /var/cuda-repo-ubuntu2004-11-6-local/7fa2af80.pub
+sudo apt-get update
+sudo apt-get -y install cuda
 ```bibtex
 @inproceedings{Matsuki:Murai:etal:CVPR2024,
   title={{G}aussian {S}platting {SLAM}},
