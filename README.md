@@ -160,7 +160,7 @@ If you found this code/work to be useful in your own research, please considerin
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
-
+export CC=/usr/bin/gcc-10, export CXX=/usr/bin/g++-10
 ```bibtex
 @inproceedings{Matsuki:Murai:etal:CVPR2024,
   title={{G}aussian {S}platting {SLAM}},
