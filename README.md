@@ -170,6 +170,10 @@ sudo dpkg -i cuda-repo-ubuntu2004-11-6-local_11.6.0-510.39.01-1_amd64.deb
 sudo apt-key add /var/cuda-repo-ubuntu2004-11-6-local/7fa2af80.pub
 sudo apt-get update
 sudo apt-get -y install cuda
+
+echo 'export PATH=/usr/local/cuda-11.6/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-11.6/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
 ```bibtex
 @inproceedings{Matsuki:Murai:etal:CVPR2024,
   title={{G}aussian {S}platting {SLAM}},
